@@ -1,0 +1,68 @@
+{
+  "skill_name": "codemath-solver",
+  "skill_version": "2.0",
+  "aggregated_at": "2026-03-12T13:32:36.355624",
+  "total_evals": 5,
+  "evals": [
+    {
+      "eval_id": 1,
+      "eval_name": "solve-specific-problem",
+      "status": "passed",
+      "pass_rate": 100.0,
+      "total_assertions": 6,
+      "passed_assertions": 6,
+      "duration": 90,
+      "tokens": null
+    },
+    {
+      "eval_id": 2,
+      "eval_name": "find-unsolved-problems",
+      "status": "passed",
+      "pass_rate": 100.0,
+      "total_assertions": 5,
+      "passed_assertions": 5,
+      "duration": 20,
+      "tokens": null
+    },
+    {
+      "eval_id": 3,
+      "eval_name": "retrieve-ac-code",
+      "status": "passed",
+      "pass_rate": 100.0,
+      "total_assertions": 5,
+      "passed_assertions": 5,
+      "duration": 20,
+      "tokens": null
+    },
+    {
+      "eval_id": 4,
+      "eval_name": "solve-contest",
+      "status": "partial",
+      "pass_rate": 80.0,
+      "total_assertions": 5,
+      "passed_assertions": 4,
+      "duration": 300,
+      "tokens": null
+    },
+    {
+      "eval_id": 5,
+      "eval_name": "find-easiest-unsolved",
+      "status": "passed",
+      "pass_rate": 100.0,
+      "total_assertions": 5,
+      "passed_assertions": 5,
+      "duration": 15,
+      "tokens": null
+    }
+  ],
+  "summary": {
+    "passed": 4,
+    "failed": 1,
+    "pending": 0,
+    "pass_rate": 80.0,
+    "total_assertions": 26,
+    "passed_assertions": 25,
+    "avg_duration": 89.0,
+    "avg_tokens": 0
+  }
+}

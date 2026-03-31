@@ -1,0 +1,11 @@
+{
+  "eval_id": 4,
+  "eval_name": "solve-contest",
+  "skill_name": "codemath-solver",
+  "skill_version": "2.0",
+  "prompt": "Giải toàn bộ contest https://laptrinh.codemath.vn/contest/hsg2425quangtri",
+  "expected_output": "Đã parse toàn bộ problems trong contest, generate code cho từng bài, và submit (với confirmation). Có báo cáo progress rõ ràng.",
+  "started_at": "2026-03-12T10:11:17.965095",
+  "status": "ready_to_run",
+  "instructions": "\nĐể chạy eval này:\n\n1. Mở Claude Code\n2. Chạy: /skill codemath-solver\n3. Paste prompt: Giải toàn bộ contest https://laptrinh.codemath.vn/contest/hsg2425quangtri\n4. Follow skill execution\n5. Lưu outputs vào: /Users/macbook_118/.qwen/skills/codemath-solver/workspace/iteration-1/eval-4-solve-contest/with_skill/outputs\n\nSau khi chạy xong, update grading.json với kết quả.\n"
+}

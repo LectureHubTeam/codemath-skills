@@ -1,0 +1,44 @@
+{
+  "skill_name": "codemath-solver",
+  "skill_version": "2.0",
+  "run_date": "2026-03-12T10:11:17.965881",
+  "total_evals": 5,
+  "evals": [
+    {
+      "eval_id": 1,
+      "eval_name": "solve-specific-problem",
+      "status": "ready",
+      "metadata_file": "/Users/macbook_118/.qwen/skills/codemath-solver/workspace/iteration-1/eval-1-solve-specific-problem/with_skill/outputs/run_metadata.json",
+      "grading_file": "/Users/macbook_118/.qwen/skills/codemath-solver/workspace/iteration-1/eval-1-solve-specific-problem/with_skill/grading.json"
+    },
+    {
+      "eval_id": 2,
+      "eval_name": "find-unsolved-problems",
+      "status": "ready",
+      "metadata_file": "/Users/macbook_118/.qwen/skills/codemath-solver/workspace/iteration-1/eval-2-find-unsolved-problems/with_skill/outputs/run_metadata.json",
+      "grading_file": "/Users/macbook_118/.qwen/skills/codemath-solver/workspace/iteration-1/eval-2-find-unsolved-problems/with_skill/grading.json"
+    },
+    {
+      "eval_id": 3,
+      "eval_name": "retrieve-ac-code",
+      "status": "ready",
+      "metadata_file": "/Users/macbook_118/.qwen/skills/codemath-solver/workspace/iteration-1/eval-3-retrieve-ac-code/with_skill/outputs/run_metadata.json",
+      "grading_file": "/Users/macbook_118/.qwen/skills/codemath-solver/workspace/iteration-1/eval-3-retrieve-ac-code/with_skill/grading.json"
+    },
+    {
+      "eval_id": 4,
+      "eval_name": "solve-contest",
+      "status": "ready",
+      "metadata_file": "/Users/macbook_118/.qwen/skills/codemath-solver/workspace/iteration-1/eval-4-solve-contest/with_skill/outputs/run_metadata.json",
+      "grading_file": "/Users/macbook_118/.qwen/skills/codemath-solver/workspace/iteration-1/eval-4-solve-contest/with_skill/grading.json"
+    },
+    {
+      "eval_id": 5,
+      "eval_name": "find-easiest-unsolved",
+      "status": "ready",
+      "metadata_file": "/Users/macbook_118/.qwen/skills/codemath-solver/workspace/iteration-1/eval-5-find-easiest-unsolved/with_skill/outputs/run_metadata.json",
+      "grading_file": "/Users/macbook_118/.qwen/skills/codemath-solver/workspace/iteration-1/eval-5-find-easiest-unsolved/with_skill/grading.json"
+    }
+  ],
+  "workspace": "/Users/macbook_118/.qwen/skills/codemath-solver/workspace/iteration-1"
+}

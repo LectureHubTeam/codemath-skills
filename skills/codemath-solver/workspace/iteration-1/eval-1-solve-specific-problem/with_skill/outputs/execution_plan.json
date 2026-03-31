@@ -1,0 +1,50 @@
+{
+  "eval_id": 1,
+  "eval_name": "solve-specific-problem",
+  "prompt": "Giải bài hsgthaibinh2425sodacbiet trên codemath bằng Python",
+  "started_at": "2026-03-12T10:04:14.696601",
+  "steps": [
+    {
+      "step": 1,
+      "name": "Skill Trigger",
+      "action": "Check if codemath-solver skill triggers",
+      "expected": "Skill activates on keywords \"Giải bài...codemath\"",
+      "status": "pending"
+    },
+    {
+      "step": 2,
+      "name": "Parameter Extraction",
+      "action": "Extract problem_slug=\"hsgthaibinh2425sodacbiet\", language=\"PY3\"",
+      "expected": "Parameters correctly identified",
+      "status": "pending"
+    },
+    {
+      "step": 3,
+      "name": "Flow A Execution",
+      "action": "Login → Read problem → Generate code → Test → Submit",
+      "expected": "All steps followed in order",
+      "status": "pending"
+    },
+    {
+      "step": 4,
+      "name": "Code Generation",
+      "action": "Generate Python solution based on problem constraints",
+      "expected": "Valid Python code generated",
+      "status": "pending"
+    },
+    {
+      "step": 5,
+      "name": "Local Testing",
+      "action": "Test code with sample input/output",
+      "expected": "Sample test passes",
+      "status": "pending"
+    },
+    {
+      "step": 6,
+      "name": "User Approval",
+      "action": "Ask user for submit approval",
+      "expected": "Does not submit without approval",
+      "status": "pending"
+    }
+  ]
+}

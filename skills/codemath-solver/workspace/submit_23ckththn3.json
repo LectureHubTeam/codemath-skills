@@ -1,0 +1,8 @@
+{
+  "skill": "codemath-solver",
+  "task": "submit_solution",
+  "problem_slug": "23ckththn3",
+  "language": "PY3",
+  "code_file": "/Users/macbook_118/.qwen/skills/cp-solver/workspace/23ckththn3_solution.py",
+  "description": "Submit optimized solution for 23ckththn3 (Số tuần hoàn). Fixed WA test #6 (edge case in block comparison) and TLE test #16 (O(N²) → O(N) optimization). Algorithm: Direct construction of min/max base by analyzing block structure instead of binary search."
+}

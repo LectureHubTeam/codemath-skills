@@ -1,0 +1,44 @@
+{
+  "eval_id": 3,
+  "eval_name": "retrieve-ac-code",
+  "graded_at": "2026-03-12T06:28:14.874Z",
+  "status": "passed",
+  "assertions": [
+    {
+      "name": "Skill triggered",
+      "text": "Skill triggered",
+      "passed": true,
+      "evidence": "Verified during run"
+    },
+    {
+      "name": "Navigated to problem",
+      "text": "Navigated to problem",
+      "passed": true,
+      "evidence": "Verified during run"
+    },
+    {
+      "name": "Opened submissions",
+      "text": "Opened submissions",
+      "passed": true,
+      "evidence": "Verified during run"
+    },
+    {
+      "name": "Filtered AC",
+      "text": "Filtered AC",
+      "passed": true,
+      "evidence": "Verified during run"
+    },
+    {
+      "name": "Copied source",
+      "text": "Copied source",
+      "passed": true,
+      "evidence": "Verified during run"
+    }
+  ],
+  "timing": {
+    "duration_seconds": 20,
+    "token_usage": null
+  },
+  "feedback": "",
+  "passed": true
+}

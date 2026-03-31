@@ -1,0 +1,7 @@
+{
+  "eval_id": 5,
+  "eval_name": "find-easiest-unsolved",
+  "prompt": "Bài nào dễ nhất (nhiều người AC nhất) mà mình chưa giải trên codemath?",
+  "expected_output": "Tên bài có AC rate cao nhất trong unsolved problems. Đã sort đúng theo -ac_rate và filter unsolved chính xác.",
+  "assertions": []
+}

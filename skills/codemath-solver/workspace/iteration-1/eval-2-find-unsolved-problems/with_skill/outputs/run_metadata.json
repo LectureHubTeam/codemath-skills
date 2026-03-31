@@ -1,0 +1,11 @@
+{
+  "eval_id": 2,
+  "eval_name": "find-unsolved-problems",
+  "skill_name": "codemath-solver",
+  "skill_version": "2.0",
+  "prompt": "Tìm 10 bài chưa giải trong HSG Thái Bình, sắp xếp theo độ khó tăng dần",
+  "expected_output": "Danh sách 10 bài unsolved với thông tin: ID, tên, points, %AC rate. Đã filter đúng category và detect chính xác bài chưa solved.",
+  "started_at": "2026-03-12T10:11:17.964303",
+  "status": "ready_to_run",
+  "instructions": "\nĐể chạy eval này:\n\n1. Mở Claude Code\n2. Chạy: /skill codemath-solver\n3. Paste prompt: Tìm 10 bài chưa giải trong HSG Thái Bình, sắp xếp theo độ khó tăng dần\n4. Follow skill execution\n5. Lưu outputs vào: /Users/macbook_118/.qwen/skills/codemath-solver/workspace/iteration-1/eval-2-find-unsolved-problems/with_skill/outputs\n\nSau khi chạy xong, update grading.json với kết quả.\n"
+}

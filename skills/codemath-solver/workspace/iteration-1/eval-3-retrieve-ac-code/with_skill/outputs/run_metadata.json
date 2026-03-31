@@ -1,0 +1,11 @@
+{
+  "eval_id": 3,
+  "eval_name": "retrieve-ac-code",
+  "skill_name": "codemath-solver",
+  "skill_version": "2.0",
+  "prompt": "Lấy lại code bài hsghanoi2024catinh đã AC trên codemath",
+  "expected_output": "Source code đầy đủ của submission AC đầu tiên. Đã navigate đúng flow: problem → My submissions → filter AC → copy source.",
+  "started_at": "2026-03-12T10:11:17.964753",
+  "status": "ready_to_run",
+  "instructions": "\nĐể chạy eval này:\n\n1. Mở Claude Code\n2. Chạy: /skill codemath-solver\n3. Paste prompt: Lấy lại code bài hsghanoi2024catinh đã AC trên codemath\n4. Follow skill execution\n5. Lưu outputs vào: /Users/macbook_118/.qwen/skills/codemath-solver/workspace/iteration-1/eval-3-retrieve-ac-code/with_skill/outputs\n\nSau khi chạy xong, update grading.json với kết quả.\n"
+}

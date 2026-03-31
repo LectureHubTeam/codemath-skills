@@ -1,0 +1,7 @@
+{
+  "eval_id": 4,
+  "eval_name": "solve-contest",
+  "prompt": "Giải toàn bộ contest https://laptrinh.codemath.vn/contest/hsg2425quangtri",
+  "expected_output": "Đã parse toàn bộ problems trong contest, generate code cho từng bài, và submit (với confirmation). Có báo cáo progress rõ ràng.",
+  "assertions": []
+}

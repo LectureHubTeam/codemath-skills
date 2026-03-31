@@ -1,0 +1,50 @@
+{
+  "eval_id": 1,
+  "eval_name": "solve-specific-problem",
+  "graded_at": "2026-03-12T06:27:48.372Z",
+  "status": "passed",
+  "assertions": [
+    {
+      "name": "Skill triggered",
+      "text": "Skill triggered",
+      "passed": true,
+      "evidence": "Verified during run"
+    },
+    {
+      "name": "Parameters extracted",
+      "text": "Parameters extracted",
+      "passed": true,
+      "evidence": "Verified during run"
+    },
+    {
+      "name": "Flow followed",
+      "text": "Flow followed",
+      "passed": true,
+      "evidence": "Verified during run"
+    },
+    {
+      "name": "Code generated",
+      "text": "Code generated",
+      "passed": true,
+      "evidence": "Verified during run"
+    },
+    {
+      "name": "Local tested",
+      "text": "Local tested",
+      "passed": true,
+      "evidence": "Verified during run"
+    },
+    {
+      "name": "Approval asked",
+      "text": "Approval asked",
+      "passed": true,
+      "evidence": "Verified during run"
+    }
+  ],
+  "timing": {
+    "duration_seconds": 90,
+    "token_usage": null
+  },
+  "feedback": "ok rồi",
+  "passed": true
+}

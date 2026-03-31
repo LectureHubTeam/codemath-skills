@@ -1,0 +1,44 @@
+{
+  "eval_id": 4,
+  "eval_name": "solve-contest",
+  "graded_at": "2026-03-12T06:28:27.608Z",
+  "status": "partial",
+  "assertions": [
+    {
+      "name": "Skill triggered",
+      "text": "Skill triggered",
+      "passed": true,
+      "evidence": "Verified during run"
+    },
+    {
+      "name": "Contest parsed",
+      "text": "Contest parsed",
+      "passed": true,
+      "evidence": "Verified during run"
+    },
+    {
+      "name": "Loop executed",
+      "text": "Loop executed",
+      "passed": true,
+      "evidence": "Verified during run"
+    },
+    {
+      "name": "Flow A called",
+      "text": "Flow A called",
+      "passed": false,
+      "evidence": "Failed during run"
+    },
+    {
+      "name": "Progress reported",
+      "text": "Progress reported",
+      "passed": true,
+      "evidence": "Verified during run"
+    }
+  ],
+  "timing": {
+    "duration_seconds": 300,
+    "token_usage": null
+  },
+  "feedback": "",
+  "passed": false
+}

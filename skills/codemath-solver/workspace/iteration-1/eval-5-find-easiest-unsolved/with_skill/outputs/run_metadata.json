@@ -1,0 +1,11 @@
+{
+  "eval_id": 5,
+  "eval_name": "find-easiest-unsolved",
+  "skill_name": "codemath-solver",
+  "skill_version": "2.0",
+  "prompt": "Bài nào dễ nhất (nhiều người AC nhất) mà mình chưa giải trên codemath?",
+  "expected_output": "Tên bài có AC rate cao nhất trong unsolved problems. Đã sort đúng theo -ac_rate và filter unsolved chính xác.",
+  "started_at": "2026-03-12T10:11:17.965667",
+  "status": "ready_to_run",
+  "instructions": "\nĐể chạy eval này:\n\n1. Mở Claude Code\n2. Chạy: /skill codemath-solver\n3. Paste prompt: Bài nào dễ nhất (nhiều người AC nhất) mà mình chưa giải trên codemath?\n4. Follow skill execution\n5. Lưu outputs vào: /Users/macbook_118/.qwen/skills/codemath-solver/workspace/iteration-1/eval-5-find-easiest-unsolved/with_skill/outputs\n\nSau khi chạy xong, update grading.json với kết quả.\n"
+}

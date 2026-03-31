@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>sap-xep-chieu-lesson</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    /* CSS for syntax highlighting */
+    html { -webkit-text-size-adjust: 100%; }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { color: #008000; } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { color: #008000; font-weight: bold; } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+  <script defer=""
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+</head>
+<body>
+<h1 id="example-lesson-sắp-xếp-chiếu">Example Lesson: Sắp xếp chiếu</h1>
+<h2 id="bài-giảng-mẫu-cho-cp-teacher">Bài giảng mẫu cho CP Teacher</h2>
+<hr />
+<h1 id="bài-giảng-sắp-xếp-chiếu---đếm-số-đợt">Bài giảng: Sắp xếp chiếu -
+Đếm số đợt</h1>
+<blockquote>
+<p><strong>URL:</strong>
+https://laptrinh.codemath.vn/problem/hsgnamdinh2223sapxepchieu</p>
+<p><strong>Độ khó:</strong> ⭐ (Cơ bản)</p>
+<p><strong>Category:</strong> Array Processing / Counting</p>
+</blockquote>
+<hr />
+<h2 id="phân-tích-bài-toán">1. Phân tích bài toán</h2>
+<h3 id="đề-bài">Đề bài</h3>
+<p>Có N phiếu với số hiệu 1..N (hoán vị). Mỗi đợt đi từ đầu đến cuối
+dãy, chọn các phiếu liên tiếp theo thứ tự 1, 2, 3, … Hỏi cần ít nhất bao
+nhiêu đợt để chọn đủ các phiếu?</p>
+<h3 id="inputoutput">Input/Output</h3>
+<ul>
+<li><strong>Input:</strong>
+<ul>
+<li>Dòng 1: N (1 &lt; N ≤ 10^7)</li>
+<li>Dòng 2: N số nguyên là hoán vị của 1..N</li>
+</ul></li>
+<li><strong>Output:</strong> Số đợt tối thiểu</li>
+<li><strong>Constraints:</strong> N ≤ 10^7, thời gian 1s</li>
+</ul>
+<h3 id="nhận-diện-dạng">Nhận diện dạng</h3>
+<ul>
+<li><strong>Keywords:</strong> “số đợt”, “ít nhất” → <strong>Counting /
+Greedy</strong></li>
+<li><strong>Độ khó:</strong> ⭐ (Cơ bản)</li>
+<li><strong>Category:</strong> Array processing</li>
+</ul>
+<h3 id="tại-sao-chọn-approach-này">Tại sao chọn approach này?</h3>
+<ul>
+<li>Simulate từng đợt: O(N²) → TLE</li>
+<li>Đếm violations: O(N) → AC</li>
+</ul>
+<hr />
+<h2 id="solution-breakdown">2. Solution Breakdown</h2>
+<h3 id="mô-phỏng-thủ-công-không-dùng-code">2.1. Mô phỏng thủ công (KHÔNG
+DÙNG CODE)</h3>
+<p><strong>Test case:</strong> N=5, dãy = [3, 1, 4, 2, 5]</p>
+<p><strong>Bước 1: Phân tích yêu cầu</strong> - Cần chọn đủ các phiếu 1,
+2, 3, 4, 5 theo thứ tự - Mỗi đợt: đi từ trái sang phải, chọn phiếu tiếp
+theo nếu gặp - Hỏi: cần bao nhiêu đợt?</p>
+<p><strong>Bước 2: Làm thử trên giấy</strong></p>
+<pre><code>Dãy: [3, 1, 4, 2, 5]
+     ^  ^  ^  ^  ^
+     0  1  2  3  4  (vị trí)
+
+Đợt 1:
+- Bắt đầu từ vị trí 0
+- Cần phiếu 1 → gặp ở vị trí 1 ✓ (đang ở vị trí 1)
+- Cần phiếu 2 → gặp ở vị trí 3 ✓ (đang ở vị trí 3)
+- Cần phiếu 3 → vị trí 0 ✗ (ĐÃ QUA MẤT RỒI!)
+→ Kết thúc đợt 1, đã chọn: 1, 2
+
+Đợt 2:
+- Bắt đầu lại từ vị trí 0
+- Cần phiếu 3 → gặp ở vị trí 0 ✓ (đang ở vị trí 0)
+- Cần phiếu 4 → gặp ở vị trí 2 ✓ (đang ở vị trí 2)
+- Cần phiếu 5 → gặp ở vị trí 4 ✓ (đang ở vị trí 4)
+→ Kết thúc đợt 2, đã chọn: 3, 4, 5
+
+Tổng: 2 đợt ✅</code></pre>
+<p><strong>Bước 3: Rút ra pattern</strong></p>
+<pre><code>Nhận xét quan trọng:
+- Đợt 1: pos[1]=1, pos[2]=3 → pos[2] &gt; pos[1] → CÙNG ĐỢT ✓
+- Đợt 1→2: pos[2]=3, pos[3]=0 → pos[3] &lt; pos[2] → ĐỢT MỚI!
+- Đợt 2: pos[3]=0, pos[4]=2 → pos[4] &gt; pos[3] → CÙNG ĐỢT ✓
+- Đợt 2: pos[4]=2, pos[5]=4 → pos[5] &gt; pos[4] → CÙNG ĐỢT ✓
+
+Pattern: pos[i] &lt; pos[i-1] → cần đợt mới</code></pre>
+<p><strong>Generalization:</strong> - Số đợt = 1 + số lần
+<code>pos[i] &lt; pos[i-1]</code> với i từ 2 đến N - Vì sao? Mỗi lần vi
+phạm monotonicity → cần đợt mới</p>
+<h3 id="giải-thích-code-mapping-với-manual-walkthrough">2.2. Giải thích
+code (mapping với manual walkthrough)</h3>
+<div class="sourceCode" id="cb3"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> sys</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> solve():</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Đọc input nhanh</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    data <span class="op">=</span> sys.stdin.<span class="bu">buffer</span>.read().split()</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>    n <span class="op">=</span> <span class="bu">int</span>(data[<span class="dv">0</span>])</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Mapping với Bước 2: Build position array</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>    <span class="co"># pos[x] = vị trí của phiếu x trong dãy</span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Test case: pos[1]=1, pos[2]=3, pos[3]=0, pos[4]=2, pos[5]=4</span></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>    pos <span class="op">=</span> [<span class="dv">0</span>] <span class="op">*</span> (n <span class="op">+</span> <span class="dv">1</span>)</span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(n):</span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>        pos[<span class="bu">int</span>(data[i <span class="op">+</span> <span class="dv">1</span>])] <span class="op">=</span> i</span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Mapping với Bước 3: Count rounds</span></span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Pattern từ manual walkthrough:</span></span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>    <span class="co"># pos[i] &lt; pos[i-1] → đợt mới</span></span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Duyệt i từ 2 đến N:</span></span>
+<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a>    <span class="co"># i=2: pos[2]=3 &gt;= pos[1]=1 → OK (cùng đợt)</span></span>
+<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a>    <span class="co"># i=3: pos[3]=0 &lt;  pos[2]=3 → Đợt mới! (rounds=2)</span></span>
+<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a>    <span class="co"># i=4: pos[4]=2 &gt;= pos[3]=0 → OK (cùng đợt)</span></span>
+<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a>    <span class="co"># i=5: pos[5]=4 &gt;= pos[4]=2 → OK (cùng đợt)</span></span>
+<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a>    rounds <span class="op">=</span> <span class="dv">1</span>  <span class="co"># Ít nhất 1 đợt</span></span>
+<span id="cb3-26"><a href="#cb3-26" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">2</span>, n <span class="op">+</span> <span class="dv">1</span>):</span>
+<span id="cb3-27"><a href="#cb3-27" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> pos[i] <span class="op">&lt;</span> pos[i <span class="op">-</span> <span class="dv">1</span>]:</span>
+<span id="cb3-28"><a href="#cb3-28" aria-hidden="true" tabindex="-1"></a>            rounds <span class="op">+=</span> <span class="dv">1</span></span>
+<span id="cb3-29"><a href="#cb3-29" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb3-30"><a href="#cb3-30" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(rounds)</span>
+<span id="cb3-31"><a href="#cb3-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-32"><a href="#cb3-32" aria-hidden="true" tabindex="-1"></a>solve()</span></code></pre></div>
+<h3 id="tại-sao-solution-này-ac">2.3. Tại sao solution này AC?</h3>
+<p>✅ <strong>Complexity:</strong> <span
+class="math inline">\(O(N)\)</span> — đúng với constraints (<span
+class="math inline">\(N \leq 10^7\)</span>)</p>
+<p>✅ <strong>Edge cases:</strong> - <span
+class="math inline">\(N=1\)</span>: rounds=1 (đúng) - Dãy đã sorted:
+rounds=1 (đúng) - Dãy reverse sorted: rounds=<span
+class="math inline">\(N\)</span> (đúng)</p>
+<p>✅ <strong>Correctness:</strong> - Lemma: <span
+class="math inline">\(\text{Số đợt} = 1 + \sum_{i=2}^{N}
+\mathbf{1}[pos[i] &lt; pos[i-1]]\)</span> - Proof: - Mỗi lần <span
+class="math inline">\(pos[i] &lt; pos[i-1]\)</span> → <span
+class="math inline">\(i\)</span> và <span
+class="math inline">\(i-1\)</span> không cùng đợt - Ngược lại, nếu <span
+class="math inline">\(pos[i] \geq pos[i-1]\)</span> → cùng đợt - Vậy số
+đợt = 1 + số lần vi phạm</p>
+<p>✅ <strong>Memory:</strong> <span class="math inline">\(O(N)\)</span>
+cho position array — OK với 1GB</p>
+<hr />
+<h2 id="bài-học-tổng-quát">3. Bài học tổng quát</h2>
+<h3 id="kinh-nghiệm-nhận-diện">Kinh nghiệm nhận diện</h3>
+<p>🎯 <strong>Khi thấy “số đợt”, “số lần”:</strong> - Đếm số lần vi phạm
+điều kiện - Tìm pattern đơn giản thay vì simulate</p>
+<h3 id="pattern-cần-nhớ">Pattern cần nhớ</h3>
+<p>📌 <strong>Counting violations:</strong></p>
+<div class="sourceCode" id="cb4"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>count <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(...):</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="kw">not</span> satisfies_condition(i):</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>        count <span class="op">+=</span> <span class="dv">1</span></span></code></pre></div>
+<p>📌 <strong>Position array:</strong></p>
+<div class="sourceCode" id="cb5"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>pos <span class="op">=</span> [<span class="dv">0</span>] <span class="op">*</span> (n <span class="op">+</span> <span class="dv">1</span>)</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(n):</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>    pos[value[i]] <span class="op">=</span> i  <span class="co"># pos[x] = vị trí của x</span></span></code></pre></div>
+<h3 id="sai-lầm-thường-gặp">Sai lầm thường gặp</h3>
+<p>❌ Simulate từng đợt → <span class="math inline">\(O(N^2)\)</span>
+TLE ❌ Quên case <span class="math inline">\(N=1\)</span> ❌ Dùng
+<code>input()</code> thay vì <code>sys.stdin.buffer.read()</code> ❌
+Không build position array mà tìm kiếm tuyến tính</p>
+<h3 id="tips">Tips</h3>
+<p>💡 Dùng position array để <span class="math inline">\(O(1)\)</span>
+lookup 💡 Đọc input nhanh với <code>sys.stdin.buffer.read()</code> 💡
+Luôn nghĩ đến counting thay vì simulate</p>
+<hr />
+<h2 id="lý-thuyết-mở-rộng">4. Lý thuyết mở rộng</h2>
+<blockquote>
+<p>⚠️ <strong>Bài này không có chuyên đề mở rộng</strong> — Pattern
+“counting violations” quá đơn giản và cụ thể cho bài này.</p>
+<p>📌 <strong>Luyện tập thêm:</strong> Xem Module 5 bên dưới.</p>
+</blockquote>
+<hr />
+<h2 id="bài-tập-tương-tự">5. Bài tập tương tự</h2>
+<h3 id="dễ">Dễ ⭐</h3>
+<strong>Bài 1:</strong> Đếm số lần giảm dần trong dãy -
+<strong>URL:</strong> [Tìm trên CMOJ] - <strong>Gợi ý:</strong> Đếm số
+lần a[i] &lt; a[i-1] - <strong>Độ khó:</strong> ⭐ - <strong>Lời
+giải:</strong>
+<details>
+<summary>
+Click để xem
+</summary>
+<div class="sourceCode" id="cb6"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>count <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>, n):</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> a[i] <span class="op">&lt;</span> a[i<span class="op">-</span><span class="dv">1</span>]:</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>        count <span class="op">+=</span> <span class="dv">1</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(count)</span></code></pre></div>
+</details>
+<h3 id="trung-bình">Trung bình ⭐⭐</h3>
+<strong>Bài 2:</strong> Đếm số đoạn liên tiếp tăng dần -
+<strong>URL:</strong> [Tìm trên CMOJ] - <strong>Gợi ý:</strong> Dùng
+sliding window, đếm số đoạn - <strong>Độ khó:</strong> ⭐⭐ -
+<strong>Lời giải:</strong>
+<details>
+<summary>
+Click để xem
+</summary>
+<div class="sourceCode" id="cb7"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>count <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>length <span class="op">=</span> <span class="dv">1</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>, n):</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> a[i] <span class="op">&gt;</span> a[i<span class="op">-</span><span class="dv">1</span>]:</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>        length <span class="op">+=</span> <span class="dv">1</span></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span>:</span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>        count <span class="op">+=</span> length <span class="op">*</span> (length <span class="op">+</span> <span class="dv">1</span>) <span class="op">//</span> <span class="dv">2</span></span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>        length <span class="op">=</span> <span class="dv">1</span></span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>count <span class="op">+=</span> length <span class="op">*</span> (length <span class="op">+</span> <span class="dv">1</span>) <span class="op">//</span> <span class="dv">2</span></span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(count)</span></code></pre></div>
+</details>
+<h3 id="khó">Khó ⭐⭐⭐</h3>
+<strong>Bài 3:</strong> Đếm số đợt với nhiều điều kiện -
+<strong>URL:</strong> [Tìm trên CMOJ] - <strong>Gợi ý:</strong> Kết hợp
+nhiều patterns, đếm violations với nhiều điều kiện - <strong>Độ
+khó:</strong> ⭐⭐⭐ - <strong>Lời giải:</strong>
+<details>
+<summary>
+Click để xem
+</summary>
+<div class="sourceCode" id="cb8"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Kết hợp position array và counting</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>pos <span class="op">=</span> [<span class="dv">0</span>] <span class="op">*</span> (n <span class="op">+</span> <span class="dv">1</span>)</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(n):</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>    pos[a[i]] <span class="op">=</span> i</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>rounds <span class="op">=</span> <span class="dv">1</span></span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">2</span>, n <span class="op">+</span> <span class="dv">1</span>):</span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> pos[i] <span class="op">&lt;</span> pos[i<span class="op">-</span><span class="dv">1</span>] <span class="kw">or</span> condition2(i) <span class="kw">or</span> condition3(i):</span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>        rounds <span class="op">+=</span> <span class="dv">1</span></span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(rounds)</span></code></pre></div>
+</details>
+<hr />
+<h2 id="tổng-kết">Tổng kết</h2>
+<table>
+<thead>
+<tr>
+<th>Aspect</th>
+<th>Takeaway</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Pattern</strong></td>
+<td>Counting violations</td>
+</tr>
+<tr>
+<td><strong>Technique</strong></td>
+<td>Position array</td>
+</tr>
+<tr>
+<td><strong>Complexity</strong></td>
+<td>O(N) time, O(N) space</td>
+</tr>
+<tr>
+<td><strong>Key insight</strong></td>
+<td>pos[i] &lt; pos[i-1] → new round</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Học xong bài này, bạn có thể:</strong> - ✅ Nhận diện bài
+counting violations - ✅ Dùng position array để O(1) lookup - ✅ Đọc
+input nhanh với sys.stdin.buffer.read() - ✅ Giải các bài tương tự</p>
+</body>
+</html>

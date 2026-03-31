@@ -1,0 +1,7 @@
+{
+  "eval_id": 2,
+  "eval_name": "find-unsolved-problems",
+  "prompt": "Tìm 10 bài chưa giải, sắp xếp theo độ khó tăng dần",
+  "expected_output": "Danh sách 10 bài unsolved với thông tin: ID, tên, points, %AC rate. Đã filter đúng category và detect chính xác bài chưa solved.",
+  "assertions": []
+}

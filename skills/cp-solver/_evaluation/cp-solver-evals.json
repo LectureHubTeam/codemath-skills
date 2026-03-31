@@ -1,0 +1,41 @@
+{
+  "skill_name": "cp-solver",
+  "evals": [
+    {
+      "id": 1,
+      "eval_name": "solve-with-analysis",
+      "prompt": "Giải và phân tích bài https://laptrinh.codemath.vn/problem/hsgnamdinh2223sapxepchieu trên CMOJ",
+      "expected_output": "Problem analysis với constraints, algorithm selection với reasoning, code solution, test samples, và submit. Phải có complexity analysis rõ ràng."
+    },
+    {
+      "id": 2,
+      "eval_name": "algorithm-selection",
+      "prompt": "Bài này N=10^5, Q=10^5, có range queries và point updates, dùng thuật toán gì? Giải thích trade-off.",
+      "expected_output": "Algorithm recommendation (Segment Tree/Fenwick Tree), complexity comparison, trade-off analysis, và template code."
+    },
+    {
+      "id": 3,
+      "eval_name": "debug-tle",
+      "prompt": "Code bị TLE test lớn với N=10^5, giúp optimize với. [Kèm code O(N*Q) đơn giản]",
+      "expected_output": "Phân tích complexity nguyên nhân TLE, đề xuất optimization pattern, refactor code, và verify complexity mới."
+    },
+    {
+      "id": 4,
+      "eval_name": "stress-testing",
+      "prompt": "Generate test cases để stress test cho bài sorting với N ≤ 10^5",
+      "expected_output": "Brute force solution, optimized solution, random test generator, và comparison script chạy 200+ tests."
+    },
+    {
+      "id": 5,
+      "eval_name": "delegate-from-codemath",
+      "prompt": "task: cp-solver\nproblem_url: https://laptrinh.codemath.vn/problem/example\nverdict: TLE\nattempts: 2\nconstraints: N ≤ 10^5\nreason: O(N^2) too slow",
+      "expected_output": "CP Solver Analysis format, phân tích tại sao TLE, đề xuất algorithm mới (O(N log N) hoặc better), code optimized, và AC verdict."
+    },
+    {
+      "id": 6,
+      "eval_name": "advanced-algorithm",
+      "prompt": "Giải bài tree path queries với N=10^5, Q=10^5 trên cây. Cần tìm algorithm phù hợp.",
+      "expected_output": "Identify tree path queries → LCA/HLD, giải thích algorithm, implementation với template, và complexity analysis."
+    }
+  ]
+}

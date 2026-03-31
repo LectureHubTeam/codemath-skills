@@ -1,0 +1,44 @@
+{
+  "eval_id": 5,
+  "eval_name": "find-easiest-unsolved",
+  "graded_at": "2026-03-12T06:28:40.899Z",
+  "status": "passed",
+  "assertions": [
+    {
+      "name": "Skill triggered",
+      "text": "Skill triggered",
+      "passed": true,
+      "evidence": "Verified during run"
+    },
+    {
+      "name": "Filters applied",
+      "text": "Filters applied",
+      "passed": true,
+      "evidence": "Verified during run"
+    },
+    {
+      "name": "Parsed correctly",
+      "text": "Parsed correctly",
+      "passed": true,
+      "evidence": "Verified during run"
+    },
+    {
+      "name": "Unsolved filtered",
+      "text": "Unsolved filtered",
+      "passed": true,
+      "evidence": "Verified during run"
+    },
+    {
+      "name": "Results displayed",
+      "text": "Results displayed",
+      "passed": true,
+      "evidence": "Verified during run"
+    }
+  ],
+  "timing": {
+    "duration_seconds": 15,
+    "token_usage": null
+  },
+  "feedback": "",
+  "passed": true
+}

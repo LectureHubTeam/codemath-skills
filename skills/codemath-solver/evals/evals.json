@@ -1,0 +1,35 @@
+{
+  "skill_name": "codemath-solver",
+  "evals": [
+    {
+      "id": 1,
+      "eval_name": "solve-specific-problem",
+      "prompt": "Giải bài hsgthaibinh2425sodacbiet trên codemath bằng Python",
+      "expected_output": "Code solution được generate, test local với sample input/output, và submit lên CMOJ (sau khi user approve). Phải có phân tích thuật toán từ constraints."
+    },
+    {
+      "id": 2,
+      "eval_name": "find-unsolved-problems",
+      "prompt": "Tìm 10 bài chưa giải trong HSG Thái Bình, sắp xếp theo độ khó tăng dần",
+      "expected_output": "Danh sách 10 bài unsolved với thông tin: ID, tên, points, %AC rate. Đã filter đúng category và detect chính xác bài chưa solved."
+    },
+    {
+      "id": 3,
+      "eval_name": "retrieve-ac-code",
+      "prompt": "Lấy lại code bài hsghanoi2024catinh đã AC trên codemath",
+      "expected_output": "Source code đầy đủ của submission AC đầu tiên. Đã navigate đúng flow: problem → My submissions → filter AC → copy source."
+    },
+    {
+      "id": 4,
+      "eval_name": "solve-contest",
+      "prompt": "Giải toàn bộ contest https://laptrinh.codemath.vn/contest/hsg2425quangtri",
+      "expected_output": "Đã parse toàn bộ problems trong contest, generate code cho từng bài, và submit (với confirmation). Có báo cáo progress rõ ràng."
+    },
+    {
+      "id": 5,
+      "eval_name": "find-easiest-unsolved",
+      "prompt": "Bài nào dễ nhất (nhiều người AC nhất) mà mình chưa giải trên codemath?",
+      "expected_output": "Tên bài có AC rate cao nhất trong unsolved problems. Đã sort đúng theo -ac_rate và filter unsolved chính xác."
+    }
+  ]
+}

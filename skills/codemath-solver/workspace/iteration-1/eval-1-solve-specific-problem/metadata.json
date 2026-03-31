@@ -1,0 +1,7 @@
+{
+  "eval_id": 1,
+  "eval_name": "solve-specific-problem",
+  "prompt": "Giải bài hsgthaibinh2425sodacbiet trên codemath bằng Python",
+  "expected_output": "Code solution được generate, test local với sample input/output, và submit lên CMOJ (sau khi user approve). Phải có phân tích thuật toán từ constraints.",
+  "assertions": []
+}

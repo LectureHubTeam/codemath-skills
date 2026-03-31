@@ -1,0 +1,11 @@
+{
+  "eval_id": 1,
+  "eval_name": "solve-specific-problem",
+  "skill_name": "codemath-solver",
+  "skill_version": "2.0",
+  "prompt": "Giải bài hsgthaibinh2425sodacbiet trên codemath bằng Python",
+  "expected_output": "Code solution được generate, test local với sample input/output, và submit lên CMOJ (sau khi user approve). Phải có phân tích thuật toán từ constraints.",
+  "started_at": "2026-03-12T10:11:17.963550",
+  "status": "ready_to_run",
+  "instructions": "\nĐể chạy eval này:\n\n1. Mở Claude Code\n2. Chạy: /skill codemath-solver\n3. Paste prompt: Giải bài hsgthaibinh2425sodacbiet trên codemath bằng Python\n4. Follow skill execution\n5. Lưu outputs vào: /Users/macbook_118/.qwen/skills/codemath-solver/workspace/iteration-1/eval-1-solve-specific-problem/with_skill/outputs\n\nSau khi chạy xong, update grading.json với kết quả.\n"
+}
